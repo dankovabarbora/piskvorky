@@ -2,8 +2,54 @@ body {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   color: #ffffff;
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  width: 25rem;
+  border-radius: 5px 5px 0 0;
+}
+
+.kontejner {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 .textova_cast {
   background-color: #283e50;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.pravidla {
+  background-color: #1fcca4;
+  text-align: center;
+}
+
+.zacit {
+  background-color: #0197f6;
+  text-align: center;
+}
+
+.pravidla a:hover {
+  background-color: #1cbb96;
+}
+
+.zacit a:hover {
+  background-color: #0090e9;
 }
