@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
@@ -22,7 +25,6 @@ a {
 
 p {
   padding: 0 10px;
-  line-height: 1.5;
 }
 
 img {
@@ -35,12 +37,15 @@ img {
   flex-direction: column;
   width: 22rem;
   margin: 5rem auto;
+  background-color: #283e50;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  line-height: 1.5;
 }
 
 .textova_cast {
-  background-color: #283e50;
-  text-align: center;
   padding: 0 1rem;
+  border-radius: 5px 5px 0 0;
 }
 
 .pravidla {
@@ -62,4 +67,16 @@ img {
 
 .zacit a:hover {
   background-color: #0090e9;
+}
+
+.pravidla__seznam {
+  text-align: left;
+  padding: 0 30px;
+}
+ol {
+  margin: 0;
+  padding-left: 30px;
+}
+li {
+  margin: 10px;
 }
