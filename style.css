@@ -32,7 +32,7 @@ p {
   border-radius: 5px 5px 0 0;
 }
 
-.kontejner {
+.kontejner__uvodni {
   display: flex;
   flex-direction: column;
   width: 22rem;
@@ -43,9 +43,8 @@ p {
   line-height: 1.5;
 }
 
-.textova_cast {
+.textova__cast {
   padding: 0 1rem;
-  border-radius: 5px 5px 0 0;
 }
 
 .button--green {
@@ -69,7 +68,7 @@ p {
   background-color: #0090e9;
 }
 
-.pravidla__seznam {
+.seznam {
   text-align: left;
   padding: 0 30px;
 }
@@ -79,4 +78,36 @@ ol {
 }
 li {
   margin: 10px;
+}
+
+.circle,
+.cross {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
+
+.kontejner__pravidla {
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  margin: 3rem auto;
+  background-color: #283e50;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  line-height: 1.5;
+}
+
+.ukazky {
+  display: flex;
+  flex-direction: column;
+}
+
+.obrazky__navod {
+  width: 100%;
+}
+
+figcaption {
+  font-style: italic;
+  line-height: 1;
 }
