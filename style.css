@@ -98,6 +98,9 @@ li {
   line-height: 1.5;
 }
 
+.ukazky__blok {
+  margin: 40px;
+}
 .obrazky__navod {
   width: 100%;
 }
@@ -114,8 +117,10 @@ figcaption {
   .ukazky {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .ukazky__blok {
     width: 45%;
+    margin: 30px 10px;
   }
 }
