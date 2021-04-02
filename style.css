@@ -98,11 +98,6 @@ li {
   line-height: 1.5;
 }
 
-.ukazky {
-  display: flex;
-  flex-direction: column;
-}
-
 .obrazky__navod {
   width: 100%;
 }
@@ -110,4 +105,17 @@ li {
 figcaption {
   font-style: italic;
   line-height: 1;
+}
+
+@media (min-width: 640px) {
+  .kontejner__pravidla {
+    width: 44rem;
+  }
+  .ukazky {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ukazky__blok {
+    width: 45%;
+  }
 }
