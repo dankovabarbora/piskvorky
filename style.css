@@ -60,11 +60,11 @@ p {
   flex-basis: 2rem;
 }
 
-.button--green a:hover {
+.button--green:hover {
   background-color: #1cbb96;
 }
 
-.button--blue a:hover {
+.button--blue:hover {
   background-color: #0090e9;
 }
 
@@ -110,7 +110,7 @@ figcaption {
   line-height: 1;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 800px) {
   .kontejner__pravidla {
     width: 44rem;
   }
