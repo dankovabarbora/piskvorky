@@ -14,6 +14,7 @@ h1 {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
   font-weight: lighter;
+  text-align: center;
 }
 
 a {
@@ -67,7 +68,7 @@ p {
 .button--blue:hover {
   background-color: #0090e9;
 }
-
+/*--------------------------------------------pravidla*/
 .seznam {
   text-align: left;
   padding: 0 30px;
@@ -123,4 +124,48 @@ figcaption {
     width: 45%;
     margin: 30px 10px;
   }
+}
+/*---------------------------------------hra*/
+
+.kontejner__hra {
+  max-width: 80vmin;
+  margin: 3rem auto;
+}
+.button--home {
+  background-color: #1fcca4;
+  border-radius: 5px;
+  height: 3.5rem;
+  width: 3rem;
+}
+
+.button--restart {
+  background-color: #0197f6;
+  border-radius: 5px;
+  width: 3rem;
+  height: 3.5rem;
+}
+.hra__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__buttons {
+  display: flex;
+}
+
+.hra__pole {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home,
+.restart {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
+
+.button__pole {
+  border: #283e50 solid 1px;
+  border-radius: 0;
 }
