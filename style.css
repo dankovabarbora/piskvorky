@@ -3,7 +3,8 @@
 }
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
-  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
   color: #ffffff;
   font-family: sans-serif;
   font-size: 1rem;
@@ -131,19 +132,7 @@ figcaption {
   max-width: 80vmin;
   margin: 3rem auto;
 }
-.button--home {
-  background-color: #1fcca4;
-  border-radius: 5px;
-  height: 3.5rem;
-  width: 3rem;
-}
 
-.button--restart {
-  background-color: #0197f6;
-  border-radius: 5px;
-  width: 3rem;
-  height: 3.5rem;
-}
 .hra__menu {
   display: flex;
   justify-content: space-between;
@@ -153,19 +142,53 @@ figcaption {
   display: flex;
 }
 
-.hra__pole {
-  display: flex;
-  flex-wrap: wrap;
+.hraje p {
+  font-weight: bold;
+}
+
+.button--home {
+  background-color: #1fcca4;
+  border-radius: 5px;
+  height: 3.5rem;
+  width: 3rem;
+}
+
+.button--home:hover {
+  background-color: #1cbb96;
+}
+
+.button--restart {
+  background-color: #0197f6;
+  border-radius: 5px;
+  width: 3rem;
+  height: 3.5rem;
+}
+
+.button--restart:hover {
+  background-color: #0090e9;
 }
 
 .home,
 .restart {
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
   filter: invert(100%);
+}
+
+.hra__pole {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px #283e50;
+  min-width: 80vmin;
+  min-height: 80vmin;
 }
 
 .button__pole {
   border: #283e50 solid 1px;
   border-radius: 0;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  /* min-width: 30px;
+  min-height: 30px; */
 }
