@@ -19,10 +19,8 @@ h1 {
 }
 
 a {
-  display: block;
   text-decoration: none;
   color: #ffffff;
-  padding: 1rem;
 }
 
 p {
@@ -54,12 +52,14 @@ p {
   text-align: center;
   flex-basis: 2rem;
   border-bottom: 1px #283e50 solid;
+  padding: 1rem;
 }
 
 .button--blue {
   background-color: #0197f6;
   text-align: center;
   flex-basis: 2rem;
+  padding: 1rem;
 }
 
 .button--green:hover {
@@ -140,30 +140,33 @@ figcaption {
 
 .menu__buttons {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .hraje p {
   font-weight: bold;
 }
 
-.button--home {
-  background-color: #1fcca4;
+.button--home,
+.button--restart {
   border-radius: 5px;
   height: 3.5rem;
   width: 3rem;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  padding-top: 10px;
 }
-
+.button--home {
+  background-color: #1fcca4;
+}
 .button--home:hover {
   background-color: #1cbb96;
 }
-
 .button--restart {
   background-color: #0197f6;
-  border-radius: 5px;
-  width: 3rem;
-  height: 3.5rem;
 }
-
 .button--restart:hover {
   background-color: #0090e9;
 }
@@ -189,6 +192,9 @@ figcaption {
   margin: 0;
   padding: 0;
   width: 10%;
-  /* min-width: 30px;
-  min-height: 30px; */
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.button__pole:hover,
+.button__pole:focus {
+  background-color: rgba(255, 255, 255, 0.5);
 }
