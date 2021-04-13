@@ -87,6 +87,7 @@ li {
   width: 1em;
   height: 1em;
   filter: invert(100%);
+  margin: -1.5px;
 }
 
 .kontejner__pravidla {
@@ -197,4 +198,8 @@ figcaption {
 .button__pole:hover,
 .button__pole:focus {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button__pole:nth-child(10n) {
+  flex-grow: 1;
 }
