@@ -87,7 +87,7 @@ li {
   width: 1em;
   height: 1em;
   filter: invert(100%);
-  margin: -1.5px;
+  margin: -2px;
 }
 
 .kontejner__pravidla {
@@ -187,7 +187,7 @@ figcaption {
   min-height: 80vmin;
 }
 
-.button__pole {
+.policko {
   border: #283e50 solid 1px;
   border-radius: 0;
   margin: 0;
@@ -195,11 +195,24 @@ figcaption {
   width: 10%;
   background-color: rgba(255, 255, 255, 0.3);
 }
-.button__pole:hover,
-.button__pole:focus {
+.policko:hover,
+.policko:focus {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.button__pole:nth-child(10n) {
+.policko:nth-child(10n) {
   flex-grow: 1;
+}
+
+/*-------------------------------tridy pro JS*/
+.policko--circle {
+  background-image: url('obrazky/circle.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.policko--cross {
+  background-image: url('obrazky/cross.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
