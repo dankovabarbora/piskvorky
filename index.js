@@ -10,11 +10,13 @@ const imgHraje = document.querySelector('#hraje');
 const circleCross = (e) => {
   if (naTahu === 'circle') {
     e.target.classList.add('policko--circle');
-    imgHraje.src = 'obrazky/circle.svg';
+    imgHraje.src = 'obrazky/cross.svg';
+    e.target.disabled = true;
     naTahu = 'cross';
   } else {
     e.target.classList.add('policko--cross');
-    imgHraje.src = 'obrazky/cross.svg';
+    imgHraje.src = 'obrazky/circle.svg';
+    e.target.disabled = true;
     naTahu = 'circle';
   }
 };
