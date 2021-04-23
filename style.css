@@ -87,7 +87,7 @@ li {
   width: 1em;
   height: 1em;
   filter: invert(100%);
-  margin: -2px;
+  margin: -3px;
 }
 
 .kontejner__pravidla {
@@ -147,6 +147,7 @@ figcaption {
 
 .hraje p {
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .button--home,
@@ -198,6 +199,7 @@ figcaption {
 .policko:hover,
 .policko:focus {
   background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 
 .policko:nth-child(10n) {
@@ -209,10 +211,25 @@ figcaption {
   background-image: url('obrazky/circle.svg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 60%;
+  animation-name: hra;
+  animation-duration: 0.15s;
 }
 
 .policko--cross {
   background-image: url('obrazky/cross.svg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 60%;
+  animation-name: hra;
+  animation-duration: 0.15s;
+}
+
+@keyframes hra {
+  from {
+    background-size: 20%;
+  }
+  to {
+    background-size: 60%;
+  }
 }
