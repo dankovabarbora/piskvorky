@@ -4,7 +4,6 @@ console.log('hraju piskvorky');
 
 let naTahu = 'circle';
 
-const celePoleElm = document.querySelector('.hra__pole');
 const imgHraje = document.querySelector('#hraje');
 const polickoElm = document.querySelectorAll('.policko');
 
@@ -36,8 +35,9 @@ const circleCross = (e) => {
   }, 150);
 };
 
-celePoleElm.addEventListener('click', circleCross);
-
+for (let i = 0; i < polickoElm.length; i += 1) {
+  polickoElm[i].addEventListener('click', circleCross);
+}
 //pro jednotlive symboly vrati retezec "circle" nebo "cross"
 const getSymbol = (field) => {
   if (field.classList.contains('policko--cross')) {
