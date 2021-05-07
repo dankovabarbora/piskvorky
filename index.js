@@ -22,11 +22,18 @@ const circleCross = (e) => {
   }
   const field = e.target;
   const winner = isWinningMove(field);
-  if (winner === true && getSymbol(field) === 'circle') {
-    alert('kolecko');
-  } else if (winner === true && getSymbol(field) === 'cross') {
-    alert('cross');
-  }
+
+  setTimeout(() => {
+    if (winner === true && getSymbol(field) === 'circle') {
+      if (confirm('Vítězí hráč s kolečky. Spustit novou hru?')) {
+        open(location.reload());
+      }
+    } else if (winner === true && getSymbol(field) === 'cross') {
+      if (confirm('Vítězí hráč s křížky. Spustit novou hru?')) {
+        open(location.reload());
+      }
+    }
+  }, 150);
 };
 
 celePoleElm.addEventListener('click', circleCross);
