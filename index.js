@@ -11,7 +11,6 @@ const polickoElm = document.querySelectorAll('.policko');
 const circleCross = (e) => {
   if (naTahu === 'circle') {
     e.target.classList.add('policko--circle');
-    console.log(e.target);
     imgHraje.src = 'obrazky/cross.svg';
     e.target.disabled = true;
     naTahu = 'cross';
@@ -21,8 +20,13 @@ const circleCross = (e) => {
     e.target.disabled = true;
     naTahu = 'circle';
   }
-  const pokus = isWinningMove(e.target);
-  console.log(pokus);
+  const field = e.target;
+  const winner = isWinningMove(field);
+  if (winner === true && getSymbol(field) === 'circle') {
+    alert('kolecko');
+  } else if (winner === true && getSymbol(field) === 'cross') {
+    alert('cross');
+  }
 };
 
 celePoleElm.addEventListener('click', circleCross);
@@ -40,15 +44,13 @@ const boardSize = 10;
 
 //ocisluje jednotliva policka
 const getField = (row, column) => {
-  polickoElm[row * boardSize + column];
+  return polickoElm[row * boardSize + column];
 };
-
-console.log(getField(0, 0));
 
 //pro jednotlive policko vraci objekt s cislem radku a sloupce
 const getPosition = (field) => {
   let fieldIndex = 0;
-  while (fieldIndex < fields.length && field !== fields[fieldIndex]) {
+  while (fieldIndex < polickoElm.length && field !== polickoElm[fieldIndex]) {
     fieldIndex++;
   }
 
